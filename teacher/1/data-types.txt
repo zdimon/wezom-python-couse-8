@@ -1,0 +1,23 @@
+head
+    eye_right
+    eye_left
+    nose
+    mouth
+body
+    left_hand
+    right_hand
+
+yaml
+
+<head>
+    <eye_right color="red" id="eye_right" class="eye"></eye_right>
+</head>
+
+xml -> html
+
+man = {
+    "head": [{"color": "red"}, eye_right]
+}
+
+json dict
+

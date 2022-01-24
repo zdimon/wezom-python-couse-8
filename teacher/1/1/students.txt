@@ -1,0 +1,7 @@
+Vitaliy; electric; 5
+Vesna; manager; 0
+Nina; programmer; 8
+Nikita; pupil; 2
+Svetlana; hairdresser; 0
+Alex; engineer; 0
+Vova; sysadmin; 1
