@@ -11,3 +11,5 @@ if deystvie == '/':
     print ("Результат = ", number_1 / number_2)        
 if deystvie == '*':
     print ("Результат = ", number_1 * number_2) 
+else:
+    print("Попробуйте еще раз")
