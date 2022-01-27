@@ -5,11 +5,14 @@ print ("Второе число = ", number_2)
 deystvie = input("Напишите на выбор: + или - или / или * ")
 if deystvie == "+":
     print ("Результат = ", number_1 + number_2)
-if deystvie == '-':
-    print ("Результат = ", number_1 - number_2)
-if deystvie == '/':
-    print ("Результат = ", number_1 / number_2)        
-if deystvie == '*':
+elif deystvie == '-':
+    print ("Результат = ", number_1 / number_2)
+elif deystvie == '*':
     print ("Результат = ", number_1 * number_2) 
+elif deystvie == '/':
+    if number_2 == int("0"):
+        print("На ноль делить нельзя!")
+    else:
+        print ("Результат = ", number_1 / number_2)
 else:
     print("Попробуйте еще раз")
