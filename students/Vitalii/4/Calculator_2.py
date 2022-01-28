@@ -5,11 +5,15 @@ print ("Второе число = ", number_2)
 deystvie = input("Напишите на выбор: + или - или / или * ")
 if deystvie == "+":
     print ("Результат = ", number_1 + number_2)
-if deystvie == '-':
-    print ("Результат = ", number_1 - number_2)
-if deystvie == '/':
-    print ("Результат = ", number_1 / number_2)        
-if deystvie == '*':
+elif deystvie == '-':
+    print ("Результат = ", number_1 / number_2)
+elif deystvie == '*':
     print ("Результат = ", number_1 * number_2) 
+elif deystvie == '/':
+    try:
+        print ("Результат = ", number_1 / number_2)
+    except Exception as e:
+        print('Error')
+        print(e)
 else:
     print("Попробуйте еще раз")
