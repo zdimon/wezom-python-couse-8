@@ -1,5 +1,10 @@
-num1 = int(input("Enter number 1: "))
-num2 = int(input("Enter number 2: "))
-num3 = int(input("Enter number 3: "))
-num4 = int(input("Enter number 4: "))
-print('Сумма равна =', num1+num2+num3+num4)
+indicator = 'n'
+while indicator == 'n':
+    str = "2+5+7+12"
+    num_list = str.split('+')
+    print(num_list)
+    rezult = 0
+    for num in num_list:
+        rezult = rezult + int(num)
+    print(rezult)
+    indicator = input('Exit? y/n: ')
