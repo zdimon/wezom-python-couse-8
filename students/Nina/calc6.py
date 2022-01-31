@@ -1,9 +1,11 @@
 str1 = 'one-two-tree-for'
 list1 = str1.split('-')
 print(list1)
-l1 = list[1]
-for num in range(1,5) :
-    list2 = str(l1) + (str(num) + '.' + list1[num-1])
-    num = num + 1
-print(list2)
+
+for i in range(1,5,1) :
+    stroka1 = str(i)+ '.' + list1[i - 1] + '-'
+    stroka = stroka + stroka1
+    print(stroka)
+print(stroka)
+    
     
