@@ -21,3 +21,7 @@ print(deck)
 
 
 '''
+print('Start game')
+faces = ['diamond', 'club', 'heart', 'spade']
+print(faces)
+
