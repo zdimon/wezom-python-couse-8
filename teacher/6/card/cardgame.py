@@ -11,8 +11,13 @@ deck = []
 
 
 for face in fases:
+    print(face)
     for card in cards:
+        print(card)
         deck.append(card) 
+
+print(deck)
+
 
 
 '''
