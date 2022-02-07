@@ -1,3 +1,4 @@
+import random
 '''
 на нужно получить список карт
 fases = ['diamond', 'club', 'heart', 'spade']
@@ -20,4 +21,7 @@ for face in faces:
         print(card+'-'+face)
         deck.append(card+'-'+face)
 
+
+print(deck)
+random.shuffle(deck)
 print(deck)
