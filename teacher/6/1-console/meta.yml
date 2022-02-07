@@ -1,0 +1,73 @@
+slug: python-begginer-get-started
+name: Урок 1. Первые шаги Python.
+meta_title: Первые шаги Python.
+meta_keywords: Первые шаги Python.
+meta_description: Первые шаги Python.
+is_active: true
+tags: python start
+desc: |
+
+    Работа в консоле.
+    Основы Python. 
+        
+files:
+    -
+        file:     'py-history.md'
+        title: 'История языка. Приемущества и недостатки.'
+        meta_title: 'История языка. Приемущества и недостатки.'
+        meta_description:   'История языка. Приемущества и недостатки.'
+        meta_keywords: 'История языка. Приемущества и недостатки.'
+        desc: 
+
+    -
+        file:     'py-intro.md'
+        title: 'Введение.'
+        meta_title: 'Введение.'
+        meta_description:   'Введение.'
+        meta_keywords: 'Введение.'
+        desc: 
+        youtube: https://www.youtube.com/embed/8MSBydSsQE4
+        
+    -
+        file:     'bash-console.md'
+        title: 'Работа в консоле. Команды bash.'
+        meta_title: 'Работа в консоле. Команды bash'
+        meta_description:   'Работа в консоле.'
+        meta_keywords: 'Работа в консоле.'
+        desc: |
+        
+            - смена директории
+            
+            - просмотр директории
+            
+            - создание директории\файлов
+    
+            - системные переменные
+            
+            - запуск скриптов
+        youtube: https://www.youtube.com/embed/FJjLUmFGUPA
+  
+    -
+        file:     'python-data-type.md'
+        title: 'Python. Типы данных.'
+        meta_title: 'Python. Типы данных.'
+        meta_description:   'Python. Типы данных.'
+        meta_keywords: 'home python data type'
+        desc: 
+        youtube: https://www.youtube.com/embed/HPXXa1EmjiY
+        
+    -
+        file:     'prg-console-input-if.md'
+        title: 'Ввод данных с клавиатуры. Первая программа с условием.'
+        meta_title: 'Ввод данных с клавиатуры. Первая программа с условием.'
+        meta_description:   'Ввод данных с клавиатуры. Первая программа с условием.'
+        meta_keywords: 'python input if'
+        desc: 
+        youtube: https://www.youtube.com/embed/2umgj5O08Hk
+            
+            
+            
+            
+                
+            
+      
