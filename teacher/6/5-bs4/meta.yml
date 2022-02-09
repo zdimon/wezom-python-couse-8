@@ -1,0 +1,37 @@
+slug: python-tuple-dict
+name: BeautifullSoup. Парсим сайты.
+meta_title:  BeautifullSoup. Парсим сайты.
+meta_keywords: BeautifullSoup. Парсим сайты.
+meta_description:  BeautifullSoup. Парсим сайты.
+is_active: true
+tags: python bs4 BeautifullSoup
+desc: |
+
+    Приемы работы с bs4. 
+    
+
+        
+        
+files:
+
+    -
+        file:     'py-bs4.md'
+        title: 'Библиотека beautifulsoup.'
+        meta_title: 'Библиотека beautifulsoup.'
+        meta_description:   'Библиотека beautifulsoup.'
+        meta_keywords: 'python bs4 beautifulsoup'
+        desc: |     
+        
+            - установка
+            
+            - поиск элементов
+            
+    -
+        file:     'dz.md'
+        title: Домашнее задание.
+        meta_title: Домашнее задание.
+        meta_description:  Домашнее задание.
+        meta_keywords: 'python bs4 beautifulsoup'
+        desc: |     
+        
+

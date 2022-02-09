@@ -1,0 +1,32 @@
+slug: python-functions
+name: Функции.
+meta_title: Функции. 
+meta_keywords: Функции. 
+meta_description: Функции. 
+is_active: true
+tags: python function
+desc: |
+
+
+files:
+
+
+        
+    -
+        file:     'functions_args_kwargs.md'
+        title: 'Функции и их аргуметы'
+        meta_title: 'Функции и их аргуметы'
+        meta_description:   'Функции и их аргуметы'
+        meta_keywords: 'python function'
+        desc: |
+        
+            
+    -
+        file:     'py-buildinfunc.md'
+        title: 'Встроенные функции Python.'
+        meta_title: 'Встроенные функции Python.'
+        meta_description:   'Встроенные функции Python.'
+        meta_keywords: 'python buildin functions'
+        desc: |
+            
+

@@ -1,0 +1,33 @@
+slug: python-begginer-get-started
+name: Условия, циклы, словари.
+meta_title: Условия, циклы, словари.
+meta_keywords: Условия, циклы, словари.
+meta_description: Условия, циклы, словари.
+is_active: true
+tags: python loop if dict
+desc: 
+        
+files:
+    -
+        file:     'python-sys-for-if.md'
+        title: Условия и циклы.
+        meta_title: Условия и циклы.
+        meta_description:   Условия и циклы.
+        meta_keywords: Условия и циклы.
+        desc: 
+        youtube: https://www.youtube.com/embed/GtA1YJmcOns
+
+    -
+        file:     python-dict.md
+        title: Работа со словарями.
+        meta_title: Работа со словарями.
+        meta_description: Работа со словарями.
+        meta_keywords: Работа со словарями.
+        desc: 
+        youtube: https://www.youtube.com/embed/LMdeQQltdqc
+        
+  
+            
+                
+            
+      
