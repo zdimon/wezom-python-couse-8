@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Заказ</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+<body>
+    <article>
+		<h1>Данные для заказа:</h1>
+		<form method="post" action="" class="subform">
+			<p>
+				<label for="name">Как вас зовут?</label>
+				<input type="text" name="name" id="name">
+			</p>
+			<p>
+				<label for="Vib">Введите ваш Vier</label>
+				<input type="Vib" name="Viber: " id="Vib">
+			</p>
+			<p>Что заказываете?:
+				<label>
+					<input type="radio" name="skill" value="1">
+					плед
+                    <input type="text"  >
+					размер
+				</label>
+				<label>
+					<input type="radio" name="skill" value="2">
+					дорожную 
+                    подушку
+				</label>
+				<label>
+					<input type="radio" name="skill" value="3">
+					сердечко
+				</label>
+			</p>
+			<p>
+				<label for="goal">Доставка:</label>
+				<select name="goal" id="goal">
+					<option>Новая Почта</option>
+					<option>Justin</option>
+					<option>Укрпочта</option>
+				</select>
+			</p>
+			<p>
+				<label for="comments">Комментарии,
+                    пожелания)</label>
+				<textarea name="comments" cols="40" rows="5" id="comments">
+				</textarea>
+			</p>
+			<p>
+				<input type="submit" value="Отправить">
+			</p>
+		</form>
+	</article>
+    <a href="index.html">Вернуться в магазин</a>
+</body>
+</html>

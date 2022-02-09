@@ -1,0 +1,2 @@
+PS F:\WEZOM\wezom-python-couse-8\students\nina\5> ssh http.server
+ssh: Could not resolve hostname http.server: \335\362\356\362 \365\356\361\362 \355\345\350\347\342\345\361\362\345\355.
