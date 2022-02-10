@@ -1,16 +1,11 @@
 def calc(spisok: list,koef: int):
-    print(spisok)
     tmp = []
     for number in spisok:
-        sum = number*koef
-
-        tmp.append(sum)
-    print(tmp)
-
+        tmp.append(number*koef)
     res = 0
     for num in tmp:
-        res= num + res
+        res = num + res
+    return res
 
-    print (res)
-
-calculator([1,2,3,4],2) 
+d = calc([1,2,3,4],2) 
+print(d)
