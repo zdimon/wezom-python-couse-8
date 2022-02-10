@@ -7,10 +7,13 @@ def func2():
     pass
 
 
-def calculator(number_list: list,koef: int):
-    print(number_list)
+def calculator(number_list: list, koef: int):
     tmp = []
-    for number in number_list:
-        print(number*koef)
-
-calculator([1,2,3,4],2)
+    for i in number_list:
+        tmp.append(i * koef)
+    sum = 0
+    for i in tmp:
+        sum = sum + i
+    return sum
+r = calculator([1,2,3,4],2)
+print(r)
