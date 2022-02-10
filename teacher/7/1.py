@@ -1,16 +1,13 @@
-def func1():
-    pass
-
-
-
-def func2():
-    pass
-
-
-def calculator(number_list: list,koef: int):
-    print(number_list)
-    tmp = []
-    for number in number_list:
-        print(number*koef)
-
-calculator([1,2,3,4],2)
+print('Введите целое число(можно отрицательное), нажимайте enter')
+print(' для окончания ввода просто нажмите enter')
+Z = int(input('-->> '))
+list_Z = []
+while True:
+    try:
+        list_Z.append(Z)
+        Z = int(input('-->> '))
+    except:
+        break
+print(list_Z)
+coeff = int(input("Введите коэффициент: "))
+print(sum(list_Z)*coeff)
