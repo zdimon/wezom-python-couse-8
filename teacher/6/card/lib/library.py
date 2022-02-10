@@ -9,3 +9,11 @@ def create_deck():
             deck.append(card+'-'+face)
     random.shuffle(deck)
     return deck
+
+
+def count_points(hand):
+    account = 0
+    for card in hand:
+        tmp = card.split('-')
+        account = account + int(tmp[0]) 
+    return account   
