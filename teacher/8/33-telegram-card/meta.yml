@@ -1,0 +1,31 @@
+slug: python-telegram-card
+name: Карточная игра для телеграм.
+meta_title: Карточная игра для телеграм.
+meta_keywords: Карточная игра для телеграм.
+meta_description: Карточная игра для телеграм.
+tags: python telegram card-game
+is_active: true
+desc:
+    Разрабатываем игру Блек-Джек для телеграм-мессенжера.
+    Испольнование библиотек Pillow и pytelegramapi.
+        
+files:
+
+    -
+        file:  dz.md
+        title: Описание задачи.
+        meta_title: Описание задачи.
+        meta_description: Описание задачи.
+        meta_keywords: Описание задачи.
+        desc: 
+
+    -
+        file:  python-telegram-card.md
+        title: Карточная игра для телеграм.
+        meta_title: Карточная игра для телеграм.
+        meta_description: Карточная игра для телеграм.
+        meta_keywords: Карточная игра для телеграм.
+        desc: 
+        youtube: https://www.youtube.com/embed/e5ubUZ12Fe8
+           
+
