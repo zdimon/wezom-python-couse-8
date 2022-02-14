@@ -13,5 +13,5 @@ def calculator(number_list: list,koef: int):
     for number in number_list:
         tmp.append(number*koef)
     print(tmp)
+    
 numb = calculator([1,2,3,4],2)
-
