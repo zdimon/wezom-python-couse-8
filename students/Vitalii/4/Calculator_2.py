@@ -10,9 +10,11 @@ elif deystvie == '-':
 elif deystvie == '*':
     print ("Результат = ", number_1 * number_2) 
 elif deystvie == '/':
-    try:
+    if number_2 == int("0"):
+        print("На ноль делить нельзя!")
+    else:
         print ("Результат = ", number_1 / number_2)
-    except Exception as e:
+        except Exception as e:
         print('Error')
         print(e)
 else:

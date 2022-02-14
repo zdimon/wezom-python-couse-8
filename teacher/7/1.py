@@ -1,17 +1,11 @@
-def func1():
-    pass
-
-
-
-def func2():
-    pass
-
-
-def calculator(number_list: list,koef: int):
-    print(number_list)
+def calc(spisok: list,koef: int):
     tmp = []
-    for number in number_list:
+    for number in spisok:
         tmp.append(number*koef)
-    print(tmp)
-numb = calculator([1,2,3,4],2)
+    res = 0
+    for num in tmp:
+        res = num + res
+    return res
 
+d = calc([1,2,3,4],2) 
+print(d)
