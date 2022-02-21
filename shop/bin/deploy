@@ -1,0 +1,4 @@
+git add .
+git commit -m 'autocommit'
+git push
+ssh webmaster@213.139.210.147 -t 'cd wezom-python-couse-8/shop;git pull'

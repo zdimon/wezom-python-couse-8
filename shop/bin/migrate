@@ -1,0 +1,3 @@
+cd shop
+. ../venv/bin/activate
+python3 manage.py migrate
