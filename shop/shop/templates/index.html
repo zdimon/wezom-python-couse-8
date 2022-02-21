@@ -2,4 +2,12 @@
 
 {% block main %}
    <h1>Main page</h1>
+
+   {% for product in products %}
+     <div>
+         <h3>{{ product.name }}</h3>
+         {{ product.desc }}
+     </div>
+   {% endfor %}
+
 {% endblock %}
