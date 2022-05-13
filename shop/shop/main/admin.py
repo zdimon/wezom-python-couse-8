@@ -1,8 +1,30 @@
 from django.contrib import admin
-
-from .models import Product
+from django.utils.html import mark_safe
+from .models import Product, Category, Busket, Busketitems
 
 class ProductAdmin(admin.ModelAdmin):
-    pass
+    list_display = ['name', 'category', 'desc', 'image_tag']
+    list_filter = ['category']
+    search_fields = ['name']
+
+    def image_tag(self, obj):
+        return mark_safe('<img src="%s" />' % obj.image.url)
 
 admin.site.register(Product, ProductAdmin)
+
+
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = ['name']
+
+admin.site.register(Category, CategoryAdmin)
+
+
+class BusketAdmin(admin.ModelAdmin):
+    list_display = ['sessionid']
+
+admin.site.register(Busket, BusketAdmin)
+
+class BusketitemsAdmin(admin.ModelAdmin):
+    list_display = ['count', 'product', 'basket']
+
+admin.site.register(Busketitems, BusketitemsAdmin)

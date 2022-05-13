@@ -1,12 +1,20 @@
 {% extends "base.html" %}
 
 {% block main %}
+
+    <ul>
+      {% for category in categories %}
+        <li> {{ category.name }} </li>
+      {% endfor %}
+    </ul>
+
    <h1>Main page</h1>
 
    {% for product in products %}
      <div>
-         <h3>{{ product.name }}</h3>
-         {{ product.desc }}
+         <h3><a href="{% url 'detail' index=product.pk %}">{{ product.name }}</a></h3>
+         <a href="{% url 'detail' index=product.pk %}"> {{ product.desc }} </a>
+         <a href="{% url 'detail' index=product.pk %}"><img width="100" src="{{ product.image.url }}" /></a>
      </div>
    {% endfor %}
 
