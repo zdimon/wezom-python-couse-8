@@ -1,3 +1,5 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -41,6 +43,33 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               <strong>Album</strong>
             </a>
+            {% if not user.is_authenticated %}
+            <form action="/signin" method="POST">
+              {% csrf_token %}
+              <input type="text" style="width: 150px" name="login"/>
+              <input type="text" style="width: 150px" name="password"/>
+              <input type="submit" value="Login" />
+              <a href="registration">Registration</a>
+            </form>
+            {% else %}
+              <span style="color: white" >
+                Hello 
+                <a href="profile">
+                  {{ user.username }}
+                </a>
+                <a href="logout">Logout</a>
+              </span>
+            {% endif %}
+
+            <span style="color: white">
+              {% if LANGUAGE_CODE == 'ru' %}
+                <a href="/en">EN</a>
+              {% else %}
+                <a href="/ru">EN</a>
+              {% endif %}
+              {{ LANGUAGE_CODE }}
+            </span>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,6 +79,13 @@
       
       <main>
         <section class="py-5 text-center container">
+          {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+          {% endif %}
           {% block main %}
 
           {% endblock %}

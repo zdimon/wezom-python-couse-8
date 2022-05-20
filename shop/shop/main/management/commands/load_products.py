@@ -19,7 +19,7 @@ class Command(BaseCommand):
                 image_name = '%s.jpeg' % rnd
                 image_path = '%s/init_data/images/%s' % (BASE_DIR, image_name)
                 p = Product()
-                p.name = 'Super car'
+                p.name = 'Super car %s' % c.name
                 p.desc = 'To implement the command, edit polls/management/commands/closepoll.py to look like this:'
                 p.category = c
                 p.save()

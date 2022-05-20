@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.html import mark_safe
-from .models import Product, Category, Busket, Busketitems
+from .models import Product, Category, Busket, Busketitems, Profile
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['name', 'category', 'desc', 'image_tag']
@@ -28,3 +28,8 @@ class BusketitemsAdmin(admin.ModelAdmin):
     list_display = ['count', 'product', 'basket']
 
 admin.site.register(Busketitems, BusketitemsAdmin)
+
+class ProfileAdmin(admin.ModelAdmin):
+    list_display = ['phone']
+
+admin.site.register(Profile, ProfileAdmin)
